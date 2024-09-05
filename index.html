@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header class="title">
+      <h1>Todo List</h1>
+    </header>
+    <main>
+      <section>
+        <ul id="list">
+          <li>Wake up <input type="checkbox" /><button onclick="this.parentElement.remove()">Delete</button></li>
+        </ul>
+        <button id="showTaskForm" onclick="showTaskForm()">Add Task</button>
+      </section>
+      <br />
+      <section id="addTask">
+        <input type="text" name="newTask" id="newTask" required />
+        <br />
+        <input type="button" onclick="addTask()" value="Add" />
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
